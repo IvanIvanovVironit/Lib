@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+<<<<<<< HEAD
+=======
+    id 'maven-publish'
+>>>>>>> Init
 }
 
 android {
@@ -23,8 +27,13 @@ android {
         }
     }
     compileOptions {
+<<<<<<< HEAD
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+=======
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+>>>>>>> Init
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -39,4 +48,21 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+<<<<<<< HEAD
+=======
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.IvanIvanovVironit'
+                artifactId = 'ToasterLibrary'
+                version = '0.1.2'
+            }
+        }
+    }
+>>>>>>> Init
 }
