@@ -50,7 +50,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.IvanIvanovVironit'
                 artifactId = 'ToasterLibrary'
-                version = '0.1.2'
+                version = '0.1.7'
             }
         }
     }
