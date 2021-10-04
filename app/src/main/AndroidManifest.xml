@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToasterLibrary">
         <activity
-            android:name="com.example.toasterlibrarylib.MainActivity"
+            android:name="com.example.toasterlibrary.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
